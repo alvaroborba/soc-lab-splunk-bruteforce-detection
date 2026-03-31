@@ -28,7 +28,7 @@ Tools Used
 
  Network Configuration
 
-- Kali Linux: NAT (external attacker simulation)
+- Kali Linux: NAT/Internal Network (attacker simulation)
 - Windows machines: Internal Network
 - Splunk Server: Internal Network
 
