@@ -6,7 +6,7 @@ This lab simulates a brute force attack in a small enterprise environment and de
 Machines
 
   - Kali Linux (Attacker)
-  - Used to perform brute force attacks using Hydra
+  - Used to perform brute force attacks using smbclient
 
   - Windows 10 (Target)
   - Victim machine where login attempts occur
@@ -23,7 +23,7 @@ Tools Used
 
 - Splunk (SIEM)
 - Sysmon (Windows logging)
-- Hydra (Brute force tool)
+- smbclient (Brute force tool)
 - Kali Linux
 
  Network Configuration
