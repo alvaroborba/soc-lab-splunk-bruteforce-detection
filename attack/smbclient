@@ -1,1 +1,7 @@
 smbclient -L //192.168.1.10 -U administrador
+
+Enumerar os compartilhamentos disponíveis em um host via SMB utilizando credenciais válidas, permitindo identificar possíveis recursos acessíveis na rede.
+
+-L → lista os compartilhamentos disponíveis no host
+//192.168.1.10 → endereço do alvo
+-U administrador → usuário utilizado para autenticação
