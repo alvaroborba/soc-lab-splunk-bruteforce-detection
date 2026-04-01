@@ -1,2 +1,0 @@
-index=wineventlog EventCode=4625
-| table _time, user, src_ip, Computer
