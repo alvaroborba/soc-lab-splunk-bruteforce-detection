@@ -1,2 +1,12 @@
 index=sysmon EventCode=1
 | table _time, Computer, User, Image, CommandLine
+
+Monitorar a criação de processos nos endpoints, permitindo identificar execuções suspeitas ou potencialmente maliciosas.
+
+index=sysmon → origem dos logs do Sysmon
+EventCode=1 → eventos de criação de processos
+_time → timestamp do evento
+Computer → máquina onde o processo foi executado
+User → usuário responsável pela execução
+Image → caminho do executável
+CommandLine → linha de comando utilizada
