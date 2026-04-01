@@ -1,3 +1,10 @@
 index=wineventlog EventCode=4625
 | stats count by user, src_ip
 | where count > 5
+
+Identificar possíveis tentativas iniciais de ataque de brute force, detectando múltiplas falhas de login para um mesmo usuário ou origem.
+
+index=wineventlog → origem dos logs de eventos do Windows
+EventCode=4625 → eventos de login falho
+stats count by user, src_ip → contabiliza tentativas por usuário e IP
+where count > 5 → filtra ocorrências com mais de 5 tentativas
