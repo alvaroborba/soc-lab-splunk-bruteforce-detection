@@ -1,2 +1,11 @@
 index=wineventlog EventCode=4625
 | table _time, user, src_ip, Computer
+
+Identificar tentativas de autenticação falhas em sistemas Windows, permitindo a detecção de possíveis ataques de força bruta ou uso incorreto de credenciais.
+
+index=wineventlog → origem dos logs de eventos do Windows
+EventCode=4625 → eventos de autenticação falha
+_time → timestamp do evento
+user → usuário envolvido na tentativa
+src_ip → endereço IP de origem
+Computer → máquina onde ocorreu o evento
