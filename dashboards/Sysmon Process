@@ -1,0 +1,2 @@
+index=sysmon EventCode=1
+| table _time, Computer, User, Image, CommandLine
