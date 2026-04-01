@@ -1,3 +1,10 @@
 index=sysmon EventCode=1
 | stats count by Image, CommandLine, User
 | sort -count
+
+Identificar os processos mais executados no ambiente, permitindo detectar padrões de uso e possíveis execuções suspeitas.
+
+index=sysmon → origem dos logs do Sysmon
+EventCode=1 → eventos de criação de processos
+stats count by Image, CommandLine, User → contabiliza execuções por processo, linha de comando e usuário
+sort -count → ordena pelos processos mais frequentes
