@@ -1,0 +1,4 @@
+index=wineventlog EventCode=4625
+| stats count by user, src_ip
+| where count > 10
+| sort -count
