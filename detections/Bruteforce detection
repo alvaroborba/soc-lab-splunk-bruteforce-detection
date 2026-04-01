@@ -7,4 +7,4 @@ Identificar possíveis tentativas iniciais de ataque de brute force, detectando 
 index=wineventlog → origem dos logs de eventos do Windows
 EventCode=4625 → eventos de login falho
 stats count by user, src_ip → contabiliza tentativas por usuário e IP
-where count > 5 → filtra ocorrências com mais de 10 tentativas
+where count > 10 → filtra ocorrências com mais de 10 tentativas
