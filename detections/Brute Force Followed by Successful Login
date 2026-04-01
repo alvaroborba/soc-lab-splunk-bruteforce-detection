@@ -1,0 +1,3 @@
+index=wineventlog (EventCode=4625 OR EventCode=4624)
+| bin _time span=5m
+| stats count by _time, user, src_ip, EventCode
