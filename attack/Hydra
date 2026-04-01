@@ -1,1 +1,8 @@
 hydra -L users.txt -P rockyou.txt smb://192.168.x.x -t 4
+
+Simular um ataque de força bruta contra o serviço SMB para gerar eventos de autenticação falha no Windows e validar regras de detecção no SIEM (Splunk).
+
+-L users.txt → lista de usuários
+-P rockyou.txt → lista de senhas (wordlist)
+smb://192.168.x.x → alvo do ataque
+-t 4 → número de conexões paralelas
