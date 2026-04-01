@@ -1,1 +1,0 @@
-hydra -l usuario -P wordlist.txt smb://IP_ALVO
