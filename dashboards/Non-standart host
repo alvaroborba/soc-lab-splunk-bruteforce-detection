@@ -1,0 +1,3 @@
+index=wineventlog
+| stats count by Computer
+| sort -count
