@@ -1,3 +1,9 @@
 index=wineventlog
 | stats count by Computer
 | sort -count
+
+Identificar a quantidade de eventos gerados por cada host, permitindo visualizar quais máquinas estão mais ativas no ambiente e apoiar a criação de um baseline de comportamento.
+
+index=wineventlog → origem dos logs de eventos do Windows
+stats count by Computer → contabiliza o número de eventos por host
+sort -count → ordena os resultados de forma decrescente
