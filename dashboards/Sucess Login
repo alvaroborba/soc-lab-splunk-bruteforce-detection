@@ -1,2 +1,11 @@
 index=wineventlog EventCode=4624
 | table _time, user, src_ip, Computer
+
+Monitorar autenticações bem-sucedidas em sistemas Windows, permitindo identificar acessos legítimos e possíveis compromissos de conta.
+
+index=wineventlog → origem dos logs de eventos do Windows
+EventCode=4624 → eventos de autenticação bem-sucedida
+_time → timestamp do evento
+user → usuário autenticado
+src_ip → endereço IP de origem
+Computer → máquina onde ocorreu o login
